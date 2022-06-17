@@ -59,14 +59,29 @@
 }
 
 body {
-    background-image: url(img/bg.png);
+    background-image: url(img/bg2.png);
     background-repeat: no-repeat;
     background-position: center;
     
 }
+@media only screen and (max-width: 767px) {
+    body {
+
+       background-image: url(img/bg.png);
+       background-position: cover;
+       background-repeat: no-repeat;
+       background-size: contain;
+    }
+
+    .cake{
+        height: 50%;
+        width: 50%;
+    }
+      }
 
 img {
     width: 100%;
+    
 }
 
 .balloon-border {
@@ -79,7 +94,7 @@ img {
 .area {
     text-align: center;
     font-size: 70px;
-    color: #C4515C;
+    color: #c61dfa;
     letter-spacing: -7px;
     font-weight: 700;
     text-transform: uppercase;
@@ -115,7 +130,9 @@ img {
 }
 
 
+
 .type-wrap {
     font-size: 25px;
-    color: #C4515C;
+    color: #c61dfa;
+    text-shadow: 0 2px 2px rgb(255, 255, 255);
 }
