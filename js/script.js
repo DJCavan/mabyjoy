@@ -13,6 +13,8 @@ if (c != null) {
 }
 $(".main").fadeOut(1);
 function play() {
+    var audio = $('.song')[0];
+    audio.play();
     $(".loader").fadeOut(1500);
     $(".main").fadeIn("slow");
     sf.destroy();
