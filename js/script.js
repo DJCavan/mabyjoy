@@ -1,7 +1,8 @@
-var sf = new Snowflakes({
-    color: "#b11081",
-    minSize: 20
-});
+// var sf = new Snowflakes({
+//     color: "#b11081",
+//     minSize: 20
+// });
+
 var url_string = window.location.href; //window.location.href
 var url = new URL(url_string);
 var c = url.searchParams.get("name");
@@ -11,7 +12,7 @@ if (c != null) {
     document.getElementById("nae").innerHTML = c;
 }
 $(".main").fadeOut(1);
-$('#play').click(function () {
+function play() {
     $(".loader").fadeOut(1500);
     $(".main").fadeIn("slow");
     sf.destroy();
@@ -21,7 +22,7 @@ $('#play').click(function () {
     var audio = $('.song')[0];
     audio.play();
 
-});
+};
 var typed = new Typed("#typed", {
     stringsElement: '#typed-strings',
     typeSpeed: 60,
@@ -425,3 +426,4 @@ document.addEventListener("DOMContentLoaded", function () {
         confetti.resize();
     });
 });
+
