@@ -88,10 +88,10 @@
 <script>
     function onChange() {
     let password = document.querySelector('input[name=password]').value;
-    // alert(password);
+    // alert(password.toLowerCase());
     let plist = ['joshua', 'joshuatot', 'dexter', 'dexter joshua cavan', ' dexter joshua', 'dj','maby', 'my baby', 'porky' , 'josh'];
 
-    if (plist.includes(password)) {
+    if (plist.includes((password.toLowerCase()))) {
         swal({
             text:'Welcome Baby ko 😘'
         }).then(function() {
