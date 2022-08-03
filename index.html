@@ -98,7 +98,7 @@
         window.location = "event.html";
         });
     } 
-    else if(password === 'leeminho')
+    else if(password.toLowerCase() === 'leeminho')
     {
         swal({
             text:'Kabet mo yun! Try again.',
@@ -123,6 +123,13 @@
     {
         swal({
             text:'Please input sang password! Try again.',
+            icon: 'warning'
+        });
+    }
+    else if(password.toLowerCase() === 'gold')
+    {
+        swal({
+            text:'Ambot nalang gid! Try again.',
             icon: 'warning'
         });
     }
